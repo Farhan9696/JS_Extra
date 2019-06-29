@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <title>Simple Example
+        </title>
+    </head>
+    <body>
+        <p>I'm assigning x,y,z as varaible and id name as "new"</p>
+        <p id="new"></p>
+    </body>
+    <script>
+        //variables 
+        var x=5;
+        var y=10;
+        var z=x+y;
+
+        //simple-analogy
+
+        // let one1;
+        // one1="Hello";
+        // one1="world";
+        // alert(one1);
+
+        //copying the same variable to another
+        // let two1='Hy now working';
+        // let two2;
+
+        // two2=two1;
+
+        // alert(two1);
+        // alert(two2);
+
+        //Constant
+
+        // const man='55';
+        // alert (man);
+
+        //Variable Function *var* has no block scope
+
+        //         function sam() {
+        //   var path = "Hello"; // local variable, "var" instead of "let"
+
+        //   alert(path); // Hello
+        // }
+
+        // sam();
+
+// alert(path); // Error, path is not defined
+
+    // if code block is inside a function then var becomes functional level function
+
+        //     function sam() {
+        //   if (true) {
+        //     var path = "Hello";
+        //   }
+
+        //   alert(path); // works
+        // }
+
+        // sam();
+        // alert(path);
+        
+        //Varaible dec at function start
+
+        //         function sam() {
+        //   path = "Hello";
+
+        //   alert(path);
+
+        //   var path;
+        // }
+        // sam();
+
+       //
+            function sam() {
+        var path; 
+
+        alert(path); // undefined
+
+        path = "Hello"; 
+        }
+
+        sam();
+
+        document.getElementById("new").innerHTML=+z;
+    </script>
+</html>
